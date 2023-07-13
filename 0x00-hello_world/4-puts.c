@@ -4,7 +4,7 @@
 int main(void)
 {
 	char str[] = "\"Programming is like building a multilingual puzzle";
-
-	puts (str);
-	return (0);
+	\* this is a comment *\
+	puts(str);
+	return(0);
 }
