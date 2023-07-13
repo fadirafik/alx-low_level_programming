@@ -1,14 +1,14 @@
 /*
- *file 4-puts.c
- *by fadi haddad
+ * file 4-puts.c
+ * by fadi haddad
  */
 
 #include <stdio.h>
 
 /**
- * main prints a string using the puts function 
- * followed by a new line 
- * Return :0
+ * main - prints "Programming is like building a multilingual
+ * puzzle, followed by a newline." 
+ * Return: Always 0.
  */
 int main(void)
 {
