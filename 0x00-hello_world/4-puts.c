@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
+/**
+* this is the first thing i have to say about the main function
+* which is it prints hello world through the function 
+* puts
+*/
 int main(void)
 {
-	/**
-	* main is a very beautifull functions that prints a string
-	* which is very good 
-	*/
 	char str[] = "\"Programming is like building a multilingual puzzle";
-	/* this is a comment */
 	puts(str);
 	return (0);
 }
-	/* main is a very beautifull functions that prints a string */
