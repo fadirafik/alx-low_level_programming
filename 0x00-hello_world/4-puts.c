@@ -6,5 +6,5 @@ int main(void)
 	char str[] = "\"Programming is like building a multilingual puzzle";
 	/* this is a comment */
 	puts(str);
-	return(0);
+	return (0);
 }
