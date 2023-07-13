@@ -1,16 +1,18 @@
+/*
+ *file 4-puts.c
+ *by fadi haddad
+ */
+
 #include <stdio.h>
-#include <string.h>
 
 /**
- * this is the first thing i have to say about the main function
- * which is it prints hello world through the function 
- * puts
+ * main prints a string using the puts function 
+ * followed by a new line 
+ * Return :0
  */
 int main(void)
 {
-	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
+	puts("\"Programming is like building a multilingual puzzle");
 
-	/* this is the first comment on the return */
 	return (0);
 }
