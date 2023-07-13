@@ -3,6 +3,7 @@
 
 int main(void)
 {
+	/* main is a very beautifull functions that prints a string */
 	char str[] = "\"Programming is like building a multilingual puzzle";
 	/* this is a comment */
 	puts(str);
