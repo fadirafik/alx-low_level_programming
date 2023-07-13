@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/** main - prints size of different 
- * data types
- * Return : Always 0.
- */
+/** main - prints size of different
+  * data types
+  * Return : Always 0.
+  */
 
 int main(void)
 {
