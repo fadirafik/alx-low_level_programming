@@ -9,4 +9,4 @@ int main(void)
 	puts(str);
 	return (0);
 }
-        /* main is a very beautifull functions that prints a string */
+	/* main is a very beautifull functions that prints a string */
