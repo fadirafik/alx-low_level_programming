@@ -13,9 +13,9 @@ int main(void)
 	char eo;
 
 	eo = '\n';
-	for (ch = '0'; ch <= '9'; ch++)
+	for (ch = 'a'; ch <= 'j'; ch++)
 	{
-		putchar (ch);
+		putchar (ch - 49);
 	}
 	putchar (eo);
 	return (0);
