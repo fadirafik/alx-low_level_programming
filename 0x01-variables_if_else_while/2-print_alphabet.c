@@ -13,7 +13,7 @@ char ch;
 char eo;
 eo = '\n';
 
-for (ch = 'A' ; ch <= 'Z' ; ch++)
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 putchar (ch);
 }
