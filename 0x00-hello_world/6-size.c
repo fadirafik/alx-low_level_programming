@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/** 
+/**
 * main - prints size of different
 *
 * Return : Always 0 (Success)
