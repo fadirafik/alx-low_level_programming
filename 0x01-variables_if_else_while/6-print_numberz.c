@@ -9,13 +9,13 @@
 */
 int main(void)
 {
-	char ch;
-	char eo;
+	int ch;
+	int eo;
 
 	eo = '\n';
-	for (ch = 'a'; ch <= 'j'; ch++)
+	for (ch = 0; ch < 11; ch++)
 	{
-		putchar (ch - 49);
+		putchar (ch);
 	}
 	putchar (eo);
 	return (0);
