@@ -9,18 +9,18 @@
 */
 int main(void)
 {
-char ch;
-char eo;
-eo = '\n';
+	char ch;
+	char eo;
+	eo = '\n';
 
-for (ch = 'a' ; ch <= 'z' ; ch++)
-{
-if (ch == 'e' || ch == 'q')
-{
-  continue;
-}
-putchar (ch);
-}
-putchar (eo);
-return (0);
+	for (ch = 'a' ; ch <= 'z' ; ch++)
+	{
+		if (ch == 'e' || ch == 'q')
+		{
+			continue;
+		}
+		putchar (ch);
+	}
+	putchar (eo);
+	return (0);
 }
