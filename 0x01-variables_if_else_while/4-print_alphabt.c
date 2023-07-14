@@ -11,8 +11,8 @@ int main(void)
 {
 	char ch;
 	char eo;
-	eo = '\n';
 
+	eo = '\n';
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		if (ch == 'e' || ch == 'q')
