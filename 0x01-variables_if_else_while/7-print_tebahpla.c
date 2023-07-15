@@ -11,8 +11,8 @@ int main(void)
 {
 	char ch;
 	char eo;
-	eo = '\n';
 
+	eo = '\n';
 	for (ch = 'z' ; ch >= 'a' ; ch--)
 	{
 		putchar (ch);
