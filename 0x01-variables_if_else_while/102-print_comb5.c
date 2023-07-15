@@ -34,15 +34,16 @@ int main(void)
 						putchar (sp);
 						putchar (fj);
 						putchar (hm);
+						if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
+						{
+							putchar (eo);
+							return (0);
+						}
 						putchar (com);
 						putchar (sp);
 					}
 					bp = 0;
-					if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
-					{
-						putchar (eo);
-						return (0);
-					}
+
 				}
 			}
 		}
