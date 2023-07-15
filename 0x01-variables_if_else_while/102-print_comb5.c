@@ -27,7 +27,7 @@ int main(void)
 			{
 				for (hm = '0'; hm <= '9'; hm++)
 				{
-					if (hm >= nu && fj >= ch)
+					if (hm > nu && fj >= ch)
 					{
 						putchar (ch);
 						putchar (nu);
