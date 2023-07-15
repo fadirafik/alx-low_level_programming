@@ -33,10 +33,9 @@ int main(void)
 						putchar (nu);
 						putchar (sp);
 						putchar (fj);
-						putchar (hm);					
+						putchar (hm);
 						putchar (com);
 						putchar (sp);
-
 					}
 					if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
 					{
