@@ -12,9 +12,6 @@ int main(void)
 	int ch, nu, fj, hm, eo, com, sp, bp;
 
 	bp = 0;
-	eo = '\n';
-	sp = ' ';
-	com = ',';
 	for (ch = '0'; ch <= '9'; ch++)
 	{
 		for (nu = '0'; nu <= '9'; nu++)
@@ -31,19 +28,21 @@ int main(void)
 					{
 						putchar (ch);
 						putchar (nu);
-						putchar (sp);
+						putchar (' ');
 						putchar (fj);
 						putchar (hm);
-						if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
-						{
-							putchar (eo);
-							return (0);
-						}
-						putchar (com);
-						putchar (sp);
+					}
+					if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
+					{
+						putchar ('\n');
+						return (0);
+					}
+					if (bp == 1)
+					{
+						putchar (',');
+						putchar (' ');
 					}
 					bp = 0;
-
 				}
 			}
 		}
