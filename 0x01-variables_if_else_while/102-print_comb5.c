@@ -27,20 +27,21 @@ int main(void)
 			{
 				for (hm = '0'; hm <= '9'; hm++)
 				{
-					if (hm > nu && fj >= ch)
+					if (hm == '9' && fj == '9' && nu == '9' && ch == '9')
+						break;
+					if (hm >= nu && fj >= ch)
 					{
 						putchar (ch);
 						putchar (nu);
 						putchar (sp);
 						putchar (fj);
 						putchar (hm);
-						if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
-						break;
-						putchar (com);
-						putchar (sp);
 					}
-					else
-						continue;
+					else if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
+						break;
+					putchar (com);
+					putchar (sp);
+
 				}
 			}
 		}
