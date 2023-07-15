@@ -27,25 +27,24 @@ int main(void)
 			{
 				for (hm = '0'; hm <= '9'; hm++)
 				{
-					if (hm == '9' && fj == '9' && nu == '9' && ch == '9')
-						break;
 					if (hm >= nu && fj >= ch)
 					{
 						putchar (ch);
 						putchar (nu);
 						putchar (sp);
 						putchar (fj);
-						putchar (hm);
-					}
-					else if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
-						break;
+						putchar (hm);					
 						putchar (com);
 						putchar (sp);
 
+					}
+					if (hm == '9' && fj == '9' && nu == '8' && ch == '9')
+					{
+						putchar (eo);
+						return (0);
+					}
 				}
 			}
 		}
 	}
-	putchar (eo);
-	return (0);
 }
