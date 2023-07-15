@@ -9,7 +9,7 @@
 */
 int main(void)
 {
-	int ch, nu, fj, hm, eo, com, sp, bp;
+	int ch, nu, fj, hm, bp;
 
 	bp = 0;
 	for (ch = '0'; ch <= '9'; ch++)
