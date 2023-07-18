@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _isalpha - check the code.
+ * print_sign - check the sign of an integer.
  * @n: is an entry of user
  * Return: 1 if c is lower case
  * 0 if otherwise
