@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /*
 * this is me mario
