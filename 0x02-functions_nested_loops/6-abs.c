@@ -5,6 +5,7 @@
 /**
  * _abs - check the code.
  * Return:Always 0 if otherwise
+ * @n: input from user
  */
 int _abs(int n)
 {
