@@ -6,7 +6,7 @@
 */
 
 /**
-* print_alphabet - prints the whole alphabet ten times
+* print_alphabet_x10 - prints the whole alphabet ten times
 * Return: Always 0 (success)
 */
 
