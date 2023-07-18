@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 #include <stdio.h>
 
 /**
@@ -7,10 +8,10 @@
  * Return: 1 if c is lower case .
  * 0 if otherwise
  */
-int _islower(int c);
+int _islower(int c)
 {
     if (islower(c) != 0 )
-        return (1)
+        return (1);
     else
-        return (0)
+        return (0);
 }
