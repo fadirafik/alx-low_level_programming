@@ -4,9 +4,9 @@
 
 /**
  * _islower - check the code.
- * c - is an entry of user
+ * @c - is an entry of user
  * 
- * Return: 1 if c is lower case .
+ * Return: 1 if c is lower case 
  * 0 if otherwise
  */
 int _islower(int c)
