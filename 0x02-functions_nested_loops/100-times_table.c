@@ -21,18 +21,22 @@ void print_times_table(int n)
                 k = j * i;
                 if (k < 10)
                 {
-                    putchar(k + '0');
+                    if (j == 0)
+                    {
+                        putchar(k + '0');
+                    }
+                    else
+                    {
+                        putchar(' ');
+                        putchar(k + '0');
+                    }
                 }
                 if(k <= 99)
                 {
                     putchar(' ');
-                    putchar(' ');
                 }
                 else if (k >= 100)
                 {
-                    putchar(' ');
-                    putchar(' ');   
-                    putchar(' ');
 					_putchar((k / 100) + '0');
 					_putchar(((k / 10)) % 10 + '0');
 				}
