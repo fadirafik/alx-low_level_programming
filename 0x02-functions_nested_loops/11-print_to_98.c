@@ -16,26 +16,26 @@ void print_to_98(int n)
     if (n > 98)
     {
         k = n -98;
-        for (i = 0; i < k ; i++)
+        for (i = n; i >= 98 ; i--)
         {
             f = 98 + i;
-		    putchar((f / 10) + '0');
-			putchar((f % 10) + '0');
+		    putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
 		}
     }
     else if (n < 98)
     {
         k = 98 - n;
-            for (; k <= n ; k++)
+            for (i = n; i <= 98 ; i++)
             {
-                if (k < 10)
+                if (i < 10)
                 {
-                    putchar(k + '0');
+                    putchar(i + '0');
                 }
                 else
                 {
-                    putchar((k / 10) + '0');
-                    putchar((k % 10) + '0');
+                    putchar((i / 10) + '0');
+                    putchar((i % 10) + '0');
                 }
             }
     }        
