@@ -17,13 +17,14 @@ int main(void)
 	big = 2;
 	while (big < 4000000)
 	{
-		tmp = big;
-		big = small + big;
-		small = tmp;
 		if (big % 2 == 0)
 		{
 			sum += big;
 		}
+		tmp = big;
+		big = small + big;
+		small = tmp;
+
 	}
 	printf("%u\n", sum);
 	return (0);
