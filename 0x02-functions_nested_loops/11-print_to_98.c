@@ -17,7 +17,6 @@ void print_to_98(int n)
         k = n -98;
         for (i = n; i >= 98 ; i--)
         {
-            f = 98 + i;
 		    putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
 		}
