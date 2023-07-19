@@ -20,18 +20,18 @@ void print_times_table(int n)
 
             for (j = 0; j <= n ; j++)
             {
-                putchar(',');
-                putchar(' ');
+                _putchar(',');
+                _putchar(' ');
 
                 k = j * i;
-                
+
                 if (k < 10)
                 {
-                    putchar(' ');
+                    _putchar(' ');
                 }
                 if (k <= 99)
                 {
-                    putchar(' ');
+                    _putchar(' ');
                 }
                 if (k > 99)
                 {
