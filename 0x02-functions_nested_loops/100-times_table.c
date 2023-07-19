@@ -35,7 +35,7 @@ void print_times_table(int n)
                 {
                     putchar(' ');
                 }
-                else if (prod >= 100)
+                else if (k >= 100)
                 {
 					_putchar((k / 100) + '0');
 					_putchar(((k / 10)) % 10 + '0');
