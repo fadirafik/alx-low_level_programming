@@ -10,8 +10,8 @@
  */
 int add(int i, int j)
 {
-    int k;
+	int k;
 
-    k = i+ j;
-    return (k);
+	k = i + j;
+	return (k);
 }
