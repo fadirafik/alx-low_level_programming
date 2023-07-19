@@ -28,6 +28,7 @@ void print_times_table(int n)
                     else
                     {
                         putchar(' ');
+                        putchar(' ');
                         putchar(k + '0');
                     }
                 }
@@ -39,6 +40,7 @@ void print_times_table(int n)
                 if (j != n)
                 {
                     putchar(',');
+                    putchar(' ');
                     putchar(' ');
                 }
         }
