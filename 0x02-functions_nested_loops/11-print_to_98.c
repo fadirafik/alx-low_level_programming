@@ -12,6 +12,7 @@ void print_to_98(int n)
     int k;
     int i;
 
+    putchar(' ');
     if (n > 98)
     {
         k = n -98;
