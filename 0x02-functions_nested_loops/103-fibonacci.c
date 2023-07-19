@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	long small;
-	long big;
-	long tmp;
-	long sum;
+	unsigned int small;
+	unsigned int big;
+	unsigned int tmp;
+	unsigned int sum;
 
 	small = 1;
 	big = 2;
@@ -25,6 +25,6 @@ int main(void)
 			sum += big;
 		}
 	}
-	printf("%ld\n", sum);
+	printf("%u\n", sum);
 	return (0);
 }
