@@ -22,8 +22,11 @@ void times_table(void)
                 {
                     putchar(k + '0');
                 }
-                putchar(' ');
-				putchar(k + '0');
+                else
+                {
+                    putchar(' ');
+                    putchar(k + '0');
+                }
 			}
 			else
 			{
