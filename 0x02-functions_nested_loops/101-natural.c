@@ -6,7 +6,7 @@
  * print_times_table - gives back multiplication table of n
  * @n: is the user input
  */
-void print_times_table(int n);
+void print_times_table(int n)
 {
 	int i;
 	int j;
