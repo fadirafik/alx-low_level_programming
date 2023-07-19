@@ -28,10 +28,18 @@ void print_times_table(int n)
                     else
                     {
                         putchar(' ');
-                        putchar(' ');
                         putchar(k + '0');
                     }
                 }
+                if(k <= 99)
+                {
+                    putchar(' ');
+                }
+                else if (prod >= 100)
+                {
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10)) % 10 + '0');
+				}
                 else
                 {
                     putchar((k / 10) + '0');
