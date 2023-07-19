@@ -11,7 +11,6 @@ void print_to_98(int n)
 {
     int k;
     int i;
-    int f;
 
     if (n > 98)
     {
