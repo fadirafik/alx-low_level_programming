@@ -8,7 +8,6 @@
  */
 int main(void)
 {
-	int i;
 	long small;
 	long big;
 	long tmp;
