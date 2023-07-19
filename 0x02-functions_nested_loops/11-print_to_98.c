@@ -25,7 +25,7 @@ void print_to_98(int n)
             else
             {
                 putchar((i / 100) + '0');
-                putchar((i / 10) + '0');
+                putchar(((i - 100) / 10) + '0');
                 putchar((i % 10) + '0');
             }
             putchar(',');
