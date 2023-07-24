@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 /**
  * _strlen - resets a given number to 98
  * @s: is the user input
