@@ -1,5 +1,5 @@
 /**
- * swap_int( - resets a given number to 98
+ * swap_int - resets a given number to 98
  * @a: is the user input
  * @b: is also the user input
  *
