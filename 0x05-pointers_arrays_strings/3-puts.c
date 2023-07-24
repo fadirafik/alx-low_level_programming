@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
- * _strlen - resets a given number to 98
+ * _puts - resets a given number to 98
  * @str: is the user input
  *
  * Return: string length
