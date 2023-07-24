@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * rev_string - resets a given number to 98
- * @s: is the user input
+ * puts2 - resets a given number to 98
+ * @str: is the user input
  *
- * Return: string length
+ * Return: void
 */
 void puts2(char *str)
 {
