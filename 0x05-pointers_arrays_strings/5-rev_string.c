@@ -10,17 +10,24 @@
 */
 void rev_string(char *s)
 {
-	int i;
-	int n = strlen(s);
-	char *arro[n];
+	int i = 0, rev, ord;
+	char v;
 
-	for (i = 0; i <  strlen(s); i++)
+	while (s[i] != '\0')
+		i++;
+
+	i--;
+	rev = i;
+	ord = i / 2;
+	i = 0;
+
+	while (i <= ord)
 	{
-		arro[strlen(s)-i] = s[i] ;
+		v = s[i];
+		s[i] = s[rev];
+		s[rev] = v;
+		i++;
+		rev--;
 	}
-	for (i = 0; i <  strlen(s); i++)
-	{
-		*(s + i) = arro[i] ;
-	}
-	_putchar('\n');
 }
+
