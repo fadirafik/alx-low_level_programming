@@ -30,5 +30,6 @@ char *cap_string(char *s)
 			i++;
 		}
 	}
+	s[i] = '\0';
 	return (s);
 }
