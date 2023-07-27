@@ -12,8 +12,11 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
+		if (s[i] == '\t')
+			s[i] = ' ';
 		if (s[i - 1] < 65 || s[i - 1] > 122 || (s[i - 1] < 97 && s[i - 1] > 90))
 		{
+
 			if (s[i] > 96 && s[i] < 123)
 			{
 				s[i] =  s[i] - 32;
