@@ -8,7 +8,8 @@
  */
 char *rot13(char *s)
 {
-	int i, j;
+	int i;
+	int j;
 
 	char *c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *d = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
@@ -20,9 +21,8 @@ char *rot13(char *s)
 			if (s[i] == c[j])
 			{
 				s[i] = d[j];
-                break;
+				break;
 			}
-
 		}
 	}
 
