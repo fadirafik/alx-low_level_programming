@@ -20,7 +20,6 @@ char *string_toupper(char *s)
 		}
 		else
 		{
-			s[i] = s[i];
 			i++;
 		}
 	}
