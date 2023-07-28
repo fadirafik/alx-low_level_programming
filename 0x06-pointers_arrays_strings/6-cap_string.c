@@ -6,21 +6,30 @@
  *
  * Return: string in uppercase
  */
-char *cap_string(char *s)
+
+char *cap_string(char *str)
 {
-	int i = 0;
+	int index = 0;
 
-	while (s[i] != '\0')
+	while (str[++index])
 	{
-		if (s[i - 1] < 65 || s[i - 1] > 122 || (s[i - 1] < 97 && s[i - 1] > 90))
-		{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
 
-			if (s[i] > 96 && s[i] < 123)
-			{
-				s[i] =  s[i] - 32;
-			}
-		}
-		i++;
+		if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '"' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}')
+			str[index] -= 32;
 	}
-	return (s);
+	return (str);
 }
