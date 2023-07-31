@@ -1,0 +1,1 @@
+this is the excercise about pointers and more strings and arrays with more than one dimension.
