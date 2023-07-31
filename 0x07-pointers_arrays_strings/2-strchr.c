@@ -21,7 +21,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	if (*s == c)
-		return (s);
+	if (s[i] == c)
+		return (s + i);
 	return (0);
 }
