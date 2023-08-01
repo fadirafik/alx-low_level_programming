@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * set_string - sets a value of a pointer to a char 
+ * set_string - sets a value of a pointer to a char
  * @s: string to be derefrenced
  * @to: the pointer to the char
  *
