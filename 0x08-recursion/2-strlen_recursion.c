@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - recursively prints a string in reverse
- * @s: is the string to be printed
+ * _strlen_recursion - recursively finds the length of a string
+ * @s: is the string to be measured
  *
- * Return: nothing
+ * Return: the length in int
 */
 
 int _strlen_recursion(char *s)
