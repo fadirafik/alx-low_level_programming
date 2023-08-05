@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the number of parameters in the program
+ * main - prints all the parameters in the program
  * @argc: number of parameters inserted
  * @argv: names of the parameters inserted
  *
@@ -9,8 +9,13 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%i\n", argc - 1);
-	(void)argv;
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
 	return (0);
 }
+
 
