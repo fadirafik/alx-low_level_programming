@@ -8,7 +8,7 @@
  *
  * Return: 0 if successfull 1 if argc < 2
  */
-int main(int argc, char *argv[])
+int mul(int argc, char *argv[])
 {
 	if (argc > 3)
 		return (1);
