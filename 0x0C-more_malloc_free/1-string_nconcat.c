@@ -33,12 +33,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	num = n;
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
-	if (num == 0)
+
+	if (num <= 0)
 		return (NULL);
+
 	if (num >= _leng(s2))
 		num = _leng(s2);
+
 	len = _leng(s1) + num + 1;
 	con = malloc(len * sizeof(*con));
 	if (con == NULL)
