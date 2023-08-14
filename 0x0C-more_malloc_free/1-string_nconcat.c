@@ -18,21 +18,27 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *con;
 	int i;
 	unsigned int j;
+	int num;
 
-	len = strlen(s1);
-	con = malloc((len + n) * sizeof(char));
-	if (con == NULL)
-		return (NULL);
+	num = n;
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	if (n < 0)
+		return (NULL);
+	if (num >= _strlen(s2))
+		num = _strlen(s2);
+	len = strlen(s1) + num + 1;
+	con = malloc(len * sizeof(char));
+	if (con == NULL)
+		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		con[i] = s1[i];
 	}
-	for (j = 0; j < n; j++)
+	for (j = 0; j < num; j++)
 	{
 		con[i + j] = s2[j];
 	}
