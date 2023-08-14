@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
+#include "main.h"
 /**
  * _leng - returns the length of a string
  * @str: input string
@@ -29,11 +27,8 @@ int _leng(char *str)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len;
+	int len, i, j, num;
 	char *con;
-	int i;
-	int j;
-	int num;
 
 	num = n;
 	if (s1 == NULL)
