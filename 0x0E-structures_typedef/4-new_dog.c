@@ -54,7 +54,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 */
 int len(char *s)
 {
-	int i;
+	int i = 0;
 
 	while (s[i] != '\0')
 		i++;
@@ -71,13 +71,13 @@ int len(char *s)
 */
 char *cop(char *s1, char *s2)
 {
-	int i;
+	int i = 0;
 
 	while (s1[i] != '\0')
 	{
 		s2[i] = s1[i];
 		i++;
 	}
-	s2[i] = '\0';
+	s2[i++] = '\0';
 	return (s2);
 }
