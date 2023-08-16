@@ -1,5 +1,5 @@
-#ifndef function_poiters_h
-#define function_pointers_h
+#ifndef FUNC_H
+#define FUNC_H
 #include <stdlib.h>
 
 void print_name(char *name, void (*f)(char *));
