@@ -1,6 +1,9 @@
 #ifndef _HEADER_
 #define _HEADER_
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 /**
  * struct op - Struct op
  *
