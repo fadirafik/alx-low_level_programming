@@ -10,8 +10,8 @@
 */
 int main(int argc, char *argv[])
 {
-	int first;
-	int second;
+	int first = atoi(argv[1]);
+	int second = atoi(argv[3]);
 	int (*oper)(int, int);
 
 	if (argc != 4)
@@ -20,8 +20,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	oper =  get_op_func(argv[2]);
-	first = atoi(argv[1]);
-	second = atoi(argv[3]);
 
 	if (!oper)
 	{
