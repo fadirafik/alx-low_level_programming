@@ -8,9 +8,12 @@
 */
 int main(int argc, char *argv[])
 {
-	int first = atoi(argv[1]);
-	int second = atoi(argv[3]);
+	int first;
+	int second;
 	int (*oper)(int, int);
+
+	first = atoi(argv[1]);
+	second = atoi(argv[3]);
 
 	if (argc != 4)
 	{
