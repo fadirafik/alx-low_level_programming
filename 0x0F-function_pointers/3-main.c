@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int first;
 	int second;
-	int oper;
+	int (*oper)(int, int);
 	int si = *argv[2];
 
 	if (argc != 4)
@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	oper =  get_op_func(argv[2]);
 	if (si == '+' || si == '-' || si == '*' || si == '/' || si == '%')
 	{
 		first = atoi(argv[1]);
 		second = atoi(argv[3]);
-		oper =  get_op_func(argv[2])(first, second);
-		printf("%d\n", oper);
+		printf("%d\n", oper(first, second));
 	}
-	else
+	if (!oper)
 	{
 		printf("Error\n");
 		exit(99);
