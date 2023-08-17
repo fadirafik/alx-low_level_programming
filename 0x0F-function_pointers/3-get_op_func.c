@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * get_op_func - is a function that contains the prototype
