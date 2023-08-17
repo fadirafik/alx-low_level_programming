@@ -30,7 +30,10 @@ int main(int argc, char *argv[])
 		oper =  get_op_func(argv[2])(first, second);
 		printf("%d\n", oper);
 	}
-	printf("Error\n");
-	exit(99);
+	else
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	return (0);
 }
