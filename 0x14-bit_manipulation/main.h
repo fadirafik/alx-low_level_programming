@@ -2,6 +2,6 @@
 #define MAIN_H
 
 unsigned int binary_to_uint(const char *b);
-int power(int p);
+void print_binary(unsigned long int n);
 
 #endif
