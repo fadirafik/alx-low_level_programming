@@ -8,7 +8,7 @@
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long cur = 0;
+	unsigned long int cur = 0;
 	int count = 0;
 	int i;
 
