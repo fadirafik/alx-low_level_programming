@@ -11,7 +11,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int i;
-	int sum = 0;
+	unsigned int sum = 0;
 
 	for (i = 31; i >= 0; i--)
 	{
