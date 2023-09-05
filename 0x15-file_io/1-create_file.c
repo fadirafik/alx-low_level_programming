@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fp;
 	int succ;
-	int len;
+	int len = 0;
 	mode_t mode = 0600;
 
 	if (!filename)
