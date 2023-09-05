@@ -16,7 +16,10 @@ int create_file(const char *filename, char *text_content)
 	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, mode);
 
 	if (fp < 0 || !filename)
+	{
+		close(fp);
 		return (-1);
+	}
 
 	if (text_content != NULL)
 	{
@@ -24,6 +27,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (succ < 0)
 	{
+		close(fp);
 		return (-1);
 	}
 	close(fp);
