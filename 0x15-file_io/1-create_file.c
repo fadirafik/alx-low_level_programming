@@ -11,7 +11,6 @@ int create_file(const char *filename, char *text_content)
 {
 	int fp;
 	int succ;
-	int y = sizeof(text_content);
 	mode_t mode = 0600;
 
 	fp = open(filename, O_CREAT | O_RDWR | O_TRUNC, mode);
@@ -21,9 +20,9 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		succ = write(fp, text_content, y);
+		succ = write(fp, text_content, sizeof(text_content));
 	}
-	if (succ != y)
+	if (succ < 0)
 	{
 		return (-1);
 	}
