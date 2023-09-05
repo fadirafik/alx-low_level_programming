@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 	int succ;
 	mode_t mode = 0600;
 
-	fp = open(filename, O_WRONLY | O_CREAT, mode);
+	fp = open(filename, O_RDWR | O_CREAT | O_TRUNC, mode);
 
 	if (fp < 0 || !filename)
 		return (-1);
