@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		succ = write(fp, text_content, sizeof(text_content));
 	}
-	if (succ < 0 || succ != sizeof(text_content))
+	if (succ < 0 )
 	{
 		return (-1);
 	}
