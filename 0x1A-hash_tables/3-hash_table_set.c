@@ -25,7 +25,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
     
     numkey = key_index((const unsigned char *)key, ht->size);
     new->value = value;
-    new->key = key;
+    new->key = strdup(key);
+    if (new->key == NULL)
+    {
+        free(new);
+        return 0;
+    }
     new->next = NULL;
 
     if (ht->array[numkey] == NULL)
