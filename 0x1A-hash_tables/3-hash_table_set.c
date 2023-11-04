@@ -40,12 +40,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	else
 	{
 		temp = ht->array[numkey];
-
-		while (temp->next)
-		{
-			temp = temp->next;
-		}
-		temp->next = new;
+		new->next = temp;
 	}
 	return (1);
 }
