@@ -14,12 +14,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int numkey;
 	char *value_copy;
 
-	if (ht == NULL || key == NULL || *key == '\0' || value == NULL || new == NULL)
-		return (0);
-
 	value_copy = strdup(value);
 	if (value_copy == NULL)
 		return (0);
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL || new == NULL)
+	{
+		free(value_copy);
+		return (0);
+	}
 
 	numkey = key_index((const unsigned char *)key, ht->size);
 	new->value = strdup(value);
@@ -30,8 +32,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new);
 		return (0);
 	}
-
-
 	if (ht->array[numkey] == NULL)
 	{
 		ht->array[numkey] = new;
